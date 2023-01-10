@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1olnsyw" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="b82f70e" camunda:diagramRelationId="75ee64fe-e31c-40c9-99e4-36a4f7f72ae4" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <decision id="Decision_0tzvfoe" name="Price of drink">
+    <informationRequirement id="InformationRequirement_1nj53jk">
+      <requiredInput href="#drink_size" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0pndlgi">
+      <requiredInput href="#drink_type" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_1rsz9t6">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>drink_size</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0t0cgdz">
+        <inputExpression id="LiteralExpression_1k771up" typeRef="string">
+          <text>drink_type</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="Price" typeRef="number" />
+      <rule id="DecisionRule_1yz3nmg">
+        <inputEntry id="UnaryTests_1dnsmoq">
+          <text>"tall"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ey7a8q">
+          <text>"coffee"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_050ouwy">
+          <text>2</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0x97wsp">
+        <inputEntry id="UnaryTests_1ng59zr">
+          <text>"tall"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fb37ec">
+          <text>"tea"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05fh9km">
+          <text>1</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qq2vb0">
+        <inputEntry id="UnaryTests_1ilpv1l">
+          <text>"venti"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f0rzpq">
+          <text>"coffee"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qlvafu">
+          <text>4</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0evqrm5">
+        <inputEntry id="UnaryTests_1lz0m80">
+          <text>"venti"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gylx9k">
+          <text>"tea"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1u040te">
+          <text>2</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="drink_size" name="Size" />
+  <inputData id="drink_type" name="Type" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0tzvfoe">
+        <dc:Bounds height="80" width="180" x="200" y="100" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_18wqupm" dmnElementRef="drink_size">
+        <dc:Bounds height="45" width="125" x="168" y="258" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0am5c8o" dmnElementRef="InformationRequirement_1nj53jk">
+        <di:waypoint x="231" y="258" />
+        <di:waypoint x="260" y="200" />
+        <di:waypoint x="260" y="180" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_12lhi0r" dmnElementRef="drink_type">
+        <dc:Bounds height="45" width="125" x="328" y="259" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_08gzqde" dmnElementRef="InformationRequirement_0pndlgi">
+        <di:waypoint x="391" y="259" />
+        <di:waypoint x="320" y="200" />
+        <di:waypoint x="320" y="180" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

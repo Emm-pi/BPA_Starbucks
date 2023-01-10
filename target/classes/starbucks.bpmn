@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="b82f70e" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="7a1d18de-9e17-40e7-9a6c-b47885a82dd5">
+  <bpmn:collaboration id="Collaboration_05xkazl">
+    <bpmn:participant id="Participant_0uf836i" name="Starbucks Employee Process" processRef="starbucks_employee_process" />
+  </bpmn:collaboration>
+  <bpmn:process id="starbucks_employee_process" isExecutable="true">
+    <bpmn:extensionElements>
+      <zeebe:userTaskForm id="UserTaskForm_153k9cu">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Is drink placed on counter?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "drink_ready"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="UserTaskForm_3ii39j9">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Payment verified?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "payment_ok"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="UserTaskForm_3sqc6v6">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Card reader on?",
+      "type": "radio",
+      "id": "Field_1lu8i1b",
+      "key": "Reader_ready"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_6939d432-41a7-49f7-a22b-78fac91e1aca",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="UserTaskForm_3b3k9lk">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Drink made?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "drink_made"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="UserTaskForm_3l0fui0">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Drink made?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "drink_made"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_03h9o6j">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Is drink placed on counter?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "drink_ready"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_0ck2qt8">{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "Coffee",
+          "value": "coffee"
+        },
+        {
+          "label": "Tea",
+          "value": "tea"
+        }
+      ],
+      "label": "Drink type",
+      "type": "radio",
+      "id": "Field_0begzc0",
+      "key": "drink_type"
+    },
+    {
+      "values": [
+        {
+          "label": "Tall",
+          "value": "tall"
+        },
+        {
+          "label": "Venti",
+          "value": "venti"
+        }
+      ],
+      "label": "Size of drink",
+      "type": "radio",
+      "id": "Field_0rv161p",
+      "key": "drink_size"
+    },
+    {
+      "values": [
+        {
+          "label": "To go",
+          "value": "to_go"
+        },
+        {
+          "label": "To stay",
+          "value": "to_stay"
+        }
+      ],
+      "label": "To go?",
+      "type": "radio",
+      "id": "Field_1yavtxx",
+      "key": "to_go_or_stay"
+    },
+    {
+      "values": [
+        {
+          "label": "Card",
+          "value": "card"
+        },
+        {
+          "label": "Cash",
+          "value": "cash"
+        }
+      ],
+      "label": "Payment method",
+      "type": "radio",
+      "id": "Field_0i0m8qc",
+      "key": "payment_method"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_056f9219-6353-4d72-8d26-7c3d439c42c2",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+    </bpmn:extensionElements>
+    <bpmn:exclusiveGateway id="Gateway_0hem3xj" name="pay with card or cash">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="cash" value="cash" />
+          <zeebe:property name="card" value="card" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0g5imd4</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qvjiw9</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0kgdzab</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_0yxmw24">
+      <bpmn:incoming>Flow_0s23jah</bpmn:incoming>
+      <bpmn:incoming>Flow_1bl5j98</bpmn:incoming>
+      <bpmn:outgoing>Flow_03vzr44</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_1ne6bs9" name="to go or stay">
+      <bpmn:incoming>Flow_08ru7ze</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ntw900</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1k1t3mx</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_1lc1v3g">
+      <bpmn:incoming>Flow_09mqpq1</bpmn:incoming>
+      <bpmn:incoming>Flow_0689x3g</bpmn:incoming>
+      <bpmn:outgoing>Flow_0kab5xg</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="Event_1jcfu6v" name="drink received by customer">
+      <bpmn:incoming>Flow_0soa8jr</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="make_to_go" name="make drink to go">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="drink_to_go_or_to_stay_type" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1k1t3mx</bpmn:incoming>
+      <bpmn:outgoing>Flow_0689x3g</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="make_to_stay" name="make drink to stay">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="drink_to_go_or_to_stay_type" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0ntw900</bpmn:incoming>
+      <bpmn:outgoing>Flow_09mqpq1</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="turn_on" name="turn on electric card reader">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="payment_method_type" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0kgdzab</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bl5j98</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="take_order" name="take order">
+      <bpmn:extensionElements>
+        <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_0ck2qt8" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0h5yilx</bpmn:incoming>
+      <bpmn:outgoing>Flow_1lzg733</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:startEvent id="Event_02vd0uz" name="new customer appeared">
+      <bpmn:outgoing>Flow_0h5yilx</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_0g5imd4" sourceRef="Activity_0gyfra1" targetRef="Gateway_0hem3xj" />
+    <bpmn:sequenceFlow id="Flow_0qvjiw9" name="cash" sourceRef="Gateway_0hem3xj" targetRef="take_cash">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=payment_method="cash"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_0kgdzab" name="card" sourceRef="Gateway_0hem3xj" targetRef="turn_on">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=payment_method="card"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_0s23jah" sourceRef="take_cash" targetRef="Gateway_0yxmw24" />
+    <bpmn:sequenceFlow id="Flow_1bl5j98" sourceRef="turn_on" targetRef="Gateway_0yxmw24" />
+    <bpmn:sequenceFlow id="Flow_03vzr44" sourceRef="Gateway_0yxmw24" targetRef="Activity_0hr7s1g" />
+    <bpmn:sequenceFlow id="Flow_08ru7ze" sourceRef="Activity_0hr7s1g" targetRef="Gateway_1ne6bs9" />
+    <bpmn:sequenceFlow id="Flow_0ntw900" name="stay" sourceRef="Gateway_1ne6bs9" targetRef="make_to_stay">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=to_go_or_stay="to_stay"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_1k1t3mx" name="take away" sourceRef="Gateway_1ne6bs9" targetRef="make_to_go">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=to_go_or_stay="to_go"</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_09mqpq1" sourceRef="make_to_stay" targetRef="Gateway_1lc1v3g" />
+    <bpmn:sequenceFlow id="Flow_0689x3g" sourceRef="make_to_go" targetRef="Gateway_1lc1v3g" />
+    <bpmn:sequenceFlow id="Flow_0kab5xg" sourceRef="Gateway_1lc1v3g" targetRef="Activity_0aa6u7m" />
+    <bpmn:sequenceFlow id="Flow_0soa8jr" sourceRef="Activity_0aa6u7m" targetRef="Event_1jcfu6v" />
+    <bpmn:sequenceFlow id="Flow_1lzg733" sourceRef="take_order" targetRef="Activity_0gyfra1" />
+    <bpmn:sequenceFlow id="Flow_0h5yilx" sourceRef="Event_02vd0uz" targetRef="take_order" />
+    <bpmn:serviceTask id="Activity_0hr7s1g" name="forward order to barista">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="drink_type" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_03vzr44</bpmn:incoming>
+      <bpmn:outgoing>Flow_08ru7ze</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="take_cash" name="take cash">
+      <bpmn:extensionElements>
+        <zeebe:taskDefinition type="payment_method_type" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0qvjiw9</bpmn:incoming>
+      <bpmn:outgoing>Flow_0s23jah</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:manualTask id="Activity_0aa6u7m" name="notify customer that drink is ready">
+      <bpmn:incoming>Flow_0kab5xg</bpmn:incoming>
+      <bpmn:outgoing>Flow_0soa8jr</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:businessRuleTask id="Activity_0gyfra1" name="Determine price of drink">
+      <bpmn:extensionElements>
+        <zeebe:calledDecision decisionId="Decision_0tzvfoe" resultVariable="price" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1lzg733</bpmn:incoming>
+      <bpmn:outgoing>Flow_0g5imd4</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_05xkazl">
+      <bpmndi:BPMNShape id="Participant_0uf836i_di" bpmnElement="Participant_0uf836i" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1510" height="260" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_17g4ezc" bpmnElement="Gateway_0hem3xj" isMarkerVisible="true">
+        <dc:Bounds x="595" y="185" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="662" y="200" width="79" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1ry1zs3" bpmnElement="Gateway_0yxmw24" isMarkerVisible="true">
+        <dc:Bounds x="845" y="185" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_04vws1c" bpmnElement="Gateway_1ne6bs9" isMarkerVisible="true">
+        <dc:Bounds x="1095" y="185" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1155" y="203" width="61" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1x76qqs" bpmnElement="Gateway_1lc1v3g" isMarkerVisible="true">
+        <dc:Bounds x="1335" y="185" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0pl4t1t" bpmnElement="Event_1jcfu6v">
+        <dc:Bounds x="1592" y="192" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1568" y="235" width="84" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1tc6y9s_di" bpmnElement="make_to_go">
+        <dc:Bounds x="1190" y="102" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0m00i01_di" bpmnElement="make_to_stay">
+        <dc:Bounds x="1190" y="232" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_10ooerx_di" bpmnElement="turn_on">
+        <dc:Bounds x="700" y="102" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1n4oqme_di" bpmnElement="take_order">
+        <dc:Bounds x="320" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0yqqvrn" bpmnElement="Event_02vd0uz">
+        <dc:Bounds x="232" y="192" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="217" y="235" width="70" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0l4wfzn_di" bpmnElement="Activity_0hr7s1g">
+        <dc:Bounds x="950" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1a9odqx_di" bpmnElement="take_cash">
+        <dc:Bounds x="700" y="242" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0z6ffkw_di" bpmnElement="Activity_0aa6u7m">
+        <dc:Bounds x="1440" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0euoxxi" bpmnElement="Activity_0gyfra1">
+        <dc:Bounds x="470" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_0neh64l" bpmnElement="Flow_0g5imd4">
+        <di:waypoint x="570" y="210" />
+        <di:waypoint x="595" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1uo5c2n" bpmnElement="Flow_0qvjiw9">
+        <di:waypoint x="620" y="235" />
+        <di:waypoint x="620" y="282" />
+        <di:waypoint x="700" y="282" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="623" y="256" width="24" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_000wdqm" bpmnElement="Flow_0kgdzab">
+        <di:waypoint x="620" y="185" />
+        <di:waypoint x="620" y="142" />
+        <di:waypoint x="700" y="142" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="624" y="161" width="22" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0gnosbu" bpmnElement="Flow_0s23jah">
+        <di:waypoint x="800" y="282" />
+        <di:waypoint x="870" y="282" />
+        <di:waypoint x="870" y="235" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1jm6f0o" bpmnElement="Flow_1bl5j98">
+        <di:waypoint x="800" y="142" />
+        <di:waypoint x="870" y="142" />
+        <di:waypoint x="870" y="185" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1wpsxd9" bpmnElement="Flow_03vzr44">
+        <di:waypoint x="895" y="210" />
+        <di:waypoint x="950" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0oi6p3a" bpmnElement="Flow_08ru7ze">
+        <di:waypoint x="1050" y="210" />
+        <di:waypoint x="1095" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0uao08y" bpmnElement="Flow_0ntw900">
+        <di:waypoint x="1120" y="235" />
+        <di:waypoint x="1120" y="272" />
+        <di:waypoint x="1190" y="272" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1121" y="251" width="21" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_079cqra" bpmnElement="Flow_1k1t3mx">
+        <di:waypoint x="1120" y="185" />
+        <di:waypoint x="1120" y="142" />
+        <di:waypoint x="1190" y="142" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1110" y="161" width="50" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1hmu4z7" bpmnElement="Flow_09mqpq1">
+        <di:waypoint x="1290" y="272" />
+        <di:waypoint x="1360" y="272" />
+        <di:waypoint x="1360" y="235" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_05jumks" bpmnElement="Flow_0689x3g">
+        <di:waypoint x="1290" y="142" />
+        <di:waypoint x="1360" y="142" />
+        <di:waypoint x="1360" y="185" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0pomk9j" bpmnElement="Flow_0kab5xg">
+        <di:waypoint x="1385" y="210" />
+        <di:waypoint x="1440" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0uidrfc" bpmnElement="Flow_0soa8jr">
+        <di:waypoint x="1540" y="210" />
+        <di:waypoint x="1592" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1lzg733_di" bpmnElement="Flow_1lzg733">
+        <di:waypoint x="420" y="210" />
+        <di:waypoint x="470" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0h5yilx_di" bpmnElement="Flow_0h5yilx">
+        <di:waypoint x="268" y="210" />
+        <di:waypoint x="320" y="210" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

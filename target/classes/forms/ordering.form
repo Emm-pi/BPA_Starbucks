@@ -1,0 +1,77 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "Coffee",
+          "value": "coffee"
+        },
+        {
+          "label": "Tea",
+          "value": "tea"
+        }
+      ],
+      "label": "Drink type",
+      "type": "radio",
+      "id": "Field_0begzc0",
+      "key": "drink_type"
+    },
+    {
+      "values": [
+        {
+          "label": "Tall",
+          "value": "tall"
+        },
+        {
+          "label": "Venti",
+          "value": "venti"
+        }
+      ],
+      "label": "Size of drink",
+      "type": "radio",
+      "id": "Field_0rv161p",
+      "key": "drink_size"
+    },
+    {
+      "values": [
+        {
+          "label": "To go",
+          "value": "to_go"
+        },
+        {
+          "label": "To stay",
+          "value": "to_stay"
+        }
+      ],
+      "label": "To go?",
+      "type": "radio",
+      "id": "Field_1yavtxx",
+      "key": "to_go_or_stay"
+    },
+    {
+      "values": [
+        {
+          "label": "Card",
+          "value": "card"
+        },
+        {
+          "label": "Cash",
+          "value": "cash"
+        }
+      ],
+      "label": "Payment method",
+      "type": "radio",
+      "id": "Field_0i0m8qc",
+      "key": "payment_method"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_056f9219-6353-4d72-8d26-7c3d439c42c2",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}
