@@ -1,0 +1,29 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "yes",
+          "value": "true"
+        },
+        {
+          "label": "no",
+          "value": "false"
+        }
+      ],
+      "label": "Payment verified?",
+      "type": "radio",
+      "id": "Field_1gauy8j",
+      "key": "payment_ok"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "b82f70e"
+  },
+  "type": "default",
+  "id": "Form_e8f76491-0728-4b87-9f48-a7422700cc75",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}
